@@ -2,7 +2,7 @@
 #include <string>
 
 using namespace std;
-#define cout(p) (cout << #p << ": " << get_##p() << endl)
+#define cout(p) (cout << #p << ": " << p << endl)
 
 class Person {
   public:
@@ -16,7 +16,7 @@ class Person {
       cout(sex);
     }
 
-  private:
+  protected:
     string name;
     int age;
     char sex;

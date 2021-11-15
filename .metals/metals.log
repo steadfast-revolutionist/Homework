@@ -2,3 +2,4 @@
 [0m2021.11.12 20:54:32 INFO  time: initialize in 1.56s[0m
 [0m2021.11.12 20:54:33 WARN  Build server is not auto-connectable.[0m
 [0m2021.11.12 20:54:33 WARN  no build tool detected in workspace '/home/me/Documents/homework'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.11.12 22:03:04 INFO  shutting down Metals[0m

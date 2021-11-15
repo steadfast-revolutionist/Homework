@@ -32,15 +32,16 @@ class vehicle {
   str##put(countWheels);  \
   str##put(fuel);
 
+#define run_or_stop(str, obj) (cout << "this " #str" is " #obj" now!\n")
+
 class bicycle : public virtual vehicle {
   public:
     bicycle() = default;
-    bicycle(double m, double w, int c, string f, double h, string ma) :
-            vehicle(m, w, c, f), height(h), material(ma) { }
+    bicycle(double m, double w, int c, string f, double h, string ma) : vehicle(m, w, c, f), height(h), material(ma) {}
     bicycle &set() override;
     void info() const override;
-    void run() const override { cout << "this bicycle is running now!\n"; }
-    void stop() const override { cout << "this bicycle has stopped just now!\n"; }
+    void run() const override { run_or_stop(bicycle, run); }
+    void stop() const override { run_or_stop(bicycle, stop); }
 
   protected:
     double height;
@@ -54,8 +55,8 @@ class motorcar : public virtual vehicle {
             vehicle(m, w, c, f), seatNum(n), sign(s) { }
     motorcar &set() override;
     void info() const override;
-    void run() const override { cout << "this motorcar is running now!\n"; }
-    void stop() const override { cout << "this motorcar has stopped just now!\n"; }
+    void run() const override { run_or_stop(motorcar, run); }
+    void stop() const override { run_or_stop(motorcar, stop); }
 
   protected:
     int seatNum;
@@ -69,8 +70,8 @@ class motorcycle final : public bicycle, public motorcar {
               bicycle(m, w, c, f, h, ma), motorcar(m, w, c, f, n, s) { }
     motorcycle &set() override;
     void info() const override;
-    void run() const override { cout << "this motorcycle is running now!\n"; }
-    void stop() const override { cout << "this motorcycle has stopped just now!\n"; }
+    void run() const override { run_or_stop(motorcycle, run); }
+    void stop() const override { run_or_stop(motorcycle, stop); }
 };
 
 #define low_basic_vehicle_io(io, arg1, arg2) \
@@ -139,3 +140,5 @@ int main()
 
   return 0;
 }
+
+#undef test()
