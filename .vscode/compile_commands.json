@@ -1,6 +1,6 @@
 [
 {
   "directory": "/home/me/Documents/homework",
-  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-o", "build/.objs/homework/linux/x86_64/release/src/report4/work3.cpp.o", "src/report4/work3.cpp"],
-  "file": "src/report4/work3.cpp"
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-o", "build/.objs/homework/linux/x86_64/release/src/exercise3/work1.cpp.o", "src/exercise3/work1.cpp"],
+  "file": "src/exercise3/work1.cpp"
 }]
