@@ -1,11 +1,16 @@
 [
 {
   "directory": "/home/yuyan/Documents/Homework",
-  "arguments": ["/usr/bin/ccache", "/usr/local/bin/gcc", "-c", "-m64", "-o", "build/.objs/test/linux/x86_64/release/src/test.cpp.o", "src/test.cpp"],
-  "file": "src/test.cpp"
+  "arguments": ["/usr/bin/ccache", "/usr/local/bin/gcc", "-c", "-m64", "-o", "build/.objs/exercise/linux/x86_64/release/src/exercise4/work1.cpp.o", "src/exercise4/work1.cpp"],
+  "file": "src/exercise4/work1.cpp"
 },
 {
   "directory": "/home/yuyan/Documents/Homework",
-  "arguments": ["/usr/bin/ccache", "/usr/local/bin/gcc", "-c", "-m64", "-o", "build/.objs/homework/linux/x86_64/release/src/report4/work5.cpp.o", "src/report4/work5.cpp"],
+  "arguments": ["/usr/bin/ccache", "/usr/local/bin/gcc", "-c", "-m64", "-o", "build/.objs/report/linux/x86_64/release/src/report4/work5.cpp.o", "src/report4/work5.cpp"],
   "file": "src/report4/work5.cpp"
+},
+{
+  "directory": "/home/yuyan/Documents/Homework",
+  "arguments": ["/usr/bin/ccache", "/usr/local/bin/gcc", "-c", "-m64", "-o", "build/.objs/test/linux/x86_64/release/src/test.cpp.o", "src/test.cpp"],
+  "file": "src/test.cpp"
 }]

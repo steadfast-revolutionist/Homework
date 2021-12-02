@@ -1,15 +1,17 @@
 #include <iostream>
-#include <fstream>
 #include <string>
+
+#include "test_work5.h"
 
 using namespace std;
 
-class Employee {
-  protected:
-    string ID;
-    string name;
-    string sex;
-    string birthday;
-    string position;
-    int salary;
-};
+int main() 
+{
+  SalesManager me;
+  me.set();
+  try_save(&me);
+
+  distill();
+
+  return 0;
+}

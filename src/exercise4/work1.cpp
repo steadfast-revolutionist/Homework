@@ -15,3 +15,10 @@ class Person {
     string sex;
     int age;
 };
+
+int main()
+{
+  
+  
+  return 0;
+}
