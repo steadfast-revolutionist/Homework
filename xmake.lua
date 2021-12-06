@@ -2,12 +2,12 @@ add_rules("mode.debug", "mode.release")
 
 target("report")
     set_kind("binary")
-    add_files("src/report4/work6.cpp")
+    add_files("src/report4/work1.cpp")
     add_headerfiles()
 
 target("exercise")
     set_kind("binary")
-    add_files("src/exercise4/work1.cpp")
+    add_files("src/exercise5/work2.cpp")
     add_headerfiles()
 
 target("test")

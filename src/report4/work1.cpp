@@ -2,10 +2,11 @@
 #include <string>
 
 using namespace std;
-#define cout(p) (cout << #p << ": " << p << endl)
+#define cout(p) cout << #p << ": " << p << endl;
 
 class Person {
   public:
+    Person() = default;
     string get_name() const { return name; }
     int get_age() const { return age; }
     char get_sex() const { return sex; }
@@ -24,6 +25,7 @@ class Person {
 
 class Student : public Person {
   public:
+    Student() = default;
     int get_num() const { return num; }
     string get_address() const { return address; }
     void set_others() { cin >> num >> address; }
